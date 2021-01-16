@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import web from "./img/img2.svg";
+import Typewriter from "typewriter-effect";
 const Common = (props) => {
   return (
     <>
@@ -13,7 +14,16 @@ const Common = (props) => {
                   <h1>
                     {props.name}
                     <br />
-                    <strong className="brand-name">Ne-sTack</strong>
+
+                    <strong className="brand-name">
+                      <Typewriter
+                        options={{
+                          strings: ["Ne-sTack"],
+                          autoStart: true,
+                          loop: true
+                        }}
+                      />
+                    </strong>
                   </h1>
                   <h2 className="my-3">
                     We are the team of talented developer making websites
